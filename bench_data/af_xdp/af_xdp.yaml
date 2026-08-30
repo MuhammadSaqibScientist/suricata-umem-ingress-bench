@@ -1,0 +1,63 @@
+%YAML 1.1
+---
+# Suricata AF_XDP (Zero-Copy / Generic) Ingress Pipeline Configuration
+# Tuned for Parameter Sweeping (UMEM Fill/Completion rings & batch budgets)
+
+vars:
+  address-groups:
+    HOME_NET: "[192.168.10.0/24]"
+    EXTERNAL_NET: "!$HOME_NET"
+  port-groups:
+    HTTP_PORTS: "80"
+
+stats:
+  enabled: yes
+  interval: 1
+
+outputs:
+  - stats:
+      enabled: yes
+      filename: stats.log
+      totals: yes
+      threads: yes
+
+  - fast:
+      enabled: yes
+      filename: fast.log
+
+af-xdp:
+  - interface: ${SURICATA_IFACE:-veth_rx}
+    # Threads allocation (Set via SURICATA_THREADS or defaults to 2 worker threads)
+    threads: ${SURICATA_THREADS:-2}
+    
+    # Dynamic parameter sweeping variables for XDP / UMEM Ring Allocations
+    # XDP execution mode: 'skb' (generic software mode) or 'drv' (native driver mode)
+    force-xdp-mode: ${AF_XDP_MODE:-skb}
+    
+    # Batch processing budget (number of packets read in a single system call / ring poll)
+    busy-poll-budget: ${AF_XDP_BATCH_SIZE:-64}
+
+    # UMEM Fill Ring Size (Number of descriptors user-space gives kernel to receive packets)
+    mem-fill-ring-size: ${AF_XDP_FILL_RING:-2048}
+
+    # UMEM Completion Ring Size (Number of descriptors kernel gives user-space after packet handling)
+    mem-completion-ring-size: ${AF_XDP_COMPLETION_RING:-2048}
+
+    # Rx / Tx Ring Descriptor Sizes
+    rx-ring-size: ${AF_XDP_RX_RING:-2048}
+    tx-ring-size: ${AF_XDP_TX_RING:-2048}
+
+    # Force zero-copy or copy mode
+    force-bind-mode: ${AF_XDP_BIND_MODE:-copy}
+
+    # Checksum verification (disabled during benchmarking to isolate raw ingress throughput)
+    checksum-checks: no
+
+threading:
+  set-cpu-affinity: no
+  detect-thread-ratio: 1.0
+
+# Basic alert rules location
+default-rule-path: /etc/suricata/rules
+rule-files:
+  - suricata.rules

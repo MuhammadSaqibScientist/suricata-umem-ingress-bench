@@ -1,0 +1,64 @@
+%YAML 1.1
+---
+# Suricata AF_PACKET Ingress Pipeline Configuration
+# Tuned for Parameter Sweeping (tpacket_v3 ring/block sizes)
+
+vars:
+  address-groups:
+    HOME_NET: "[192.168.10.0/24]"
+    EXTERNAL_NET: "!$HOME_NET"
+  port-groups:
+    HTTP_PORTS: "80"
+
+stats:
+  enabled: yes
+  interval: 1
+
+outputs:
+  - stats:
+      enabled: yes
+      filename: stats.log
+      totals: yes
+      threads: yes
+
+  - fast:
+      enabled: yes
+      filename: fast.log
+
+af-packet:
+  - interface: ${SURICATA_IFACE:-veth_rx}
+    # Threads allocation (Set via SURICATA_THREADS or defaults to 2 worker threads)
+    threads: ${SURICATA_THREADS:-2}
+    
+    # Enable TPACKET_V3 ring buffer
+    tpacket-v3: yes
+    
+    # Dynamic parameter sweeping variables
+    # Ring Size (number of frames allocated in the ring)
+    ring-size: ${AF_PACKET_RING_SIZE:-2048}
+    
+    # Block Size (must be a power of 2 and aligned with page size)
+    block-size: ${AF_PACKET_BLOCK_SIZE:-32768}
+    
+    # Maximum pending packets in the internal queue before drop
+    max-pending-packets: ${AF_PACKET_MAX_PENDING:-65535}
+
+    # Cluster configuration for load balancing across threads
+    cluster-id: 99
+    cluster-type: cluster_flow
+    
+    # Checksum verification (disabled during benchmarking to isolate raw ingress throughput)
+    checksum-checks: no
+
+    # Copy mode disabled (IDS mode)
+    copy-mode: ips
+    copy-iface: none
+
+threading:
+  set-cpu-affinity: no
+  detect-thread-ratio: 1.0
+
+# Basic alert rules location
+default-rule-path: /etc/suricata/rules
+rule-files:
+  - suricata.rules
