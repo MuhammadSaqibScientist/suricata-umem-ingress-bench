@@ -30,6 +30,12 @@ case "$MODE" in
         ip netns del "$SENDER_NS" 2>/dev/null || true
         ip netns del "$RECEIVER_NS" 2>/dev/null || true
 
+        # Mount BPF filesystem on host if not mounted
+        if ! mountpoint -q /sys/fs/bpf; then
+            echo "[+] Mounting host /sys/fs/bpf..."
+            mount -t bpf bpf /sys/fs/bpf
+        fi
+
         echo "[+] Creating namespaces: '$SENDER_NS' and '$RECEIVER_NS'..."
         ip netns add "$SENDER_NS"
         ip netns add "$RECEIVER_NS"
