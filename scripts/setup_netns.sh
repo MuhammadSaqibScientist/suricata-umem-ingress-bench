@@ -40,8 +40,8 @@ case "$MODE" in
         ip netns add "$SENDER_NS"
         ip netns add "$RECEIVER_NS"
 
-        echo "[+] Creating veth pair: $VETH_TX <---> $VETH_RX..."
-        ip link add "$VETH_TX" type veth peer name "$VETH_RX"
+        echo "[+] Creating multi-queue veth pair: $VETH_TX <---> $VETH_RX..."
+        ip link add "$VETH_TX" numtxqueues 4 numrxqueues 4 type veth peer name "$VETH_RX" numtxqueues 4 numrxqueues 4
 
         echo "[+] Moving $VETH_TX to '$SENDER_NS' and $VETH_RX to '$RECEIVER_NS'..."
         ip link set "$VETH_TX" netns "$SENDER_NS"
@@ -57,6 +57,14 @@ case "$MODE" in
         ip netns exec "$RECEIVER_NS" ip link set lo up
         ip netns exec "$RECEIVER_NS" ip addr add "$IP_RX" dev "$VETH_RX"
         ip netns exec "$RECEIVER_NS" ip link set "$VETH_RX" up
+
+        # Enable Receive Packet Steering (RPS) across CPU cores inside the receiver namespace
+        echo "[+] Enabling RPS on $VETH_RX queues..."
+        ip netns exec "$RECEIVER_NS" sh -c "
+            for q in /sys/class/net/$VETH_RX/queues/rx-*; do
+                echo f > \$q/rps_cpus 2>/dev/null || true
+            done
+        "
 
         # Increase ring buffers and queues on veth interfaces for heavy benchmark loads
         ip netns exec "$SENDER_NS" ip link set dev "$VETH_TX" txqueuelen 10000
@@ -89,4 +97,3 @@ case "$MODE" in
         usage
         ;;
 esac
-

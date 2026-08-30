@@ -41,10 +41,11 @@ def setup_environment(action="up"):
     run_cmd(f"sudo {NETNS_SCRIPT} {action}")
 
 def execute_suricata_iteration(mode, mode_flag, config_file, load, batch, ring, env):
-    """
-    Executes a single benchmark run in daemon mode (-D), collects stats, and immediately saves results.
-    """
+    """Executes an isolated Suricata run with clean log tracking."""
     pid_file = f"/tmp/suricata_bench_{int(time.time())}.pid"
+    log_dir = Path(f"/tmp/suricata_logs_{int(time.time())}")
+    log_dir.mkdir(parents=True, exist_ok=True)
+    
     SURICATA_BIN = "/usr/bin/suricata"
     out_dir = DATA_DIR / mode
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -52,32 +53,33 @@ def execute_suricata_iteration(mode, mode_flag, config_file, load, batch, ring, 
     run_id = f"load_{load}_batch_{batch}_ring_{ring}"
     dest_log = out_dir / f"stats_{run_id}.log"
 
-    # Define pktgen_cmd before execution block
+    # Define traffic generator command with packet limit matching load
     pktgen_cmd = (
         f"sudo taskset -c {SENDER_CPUS} ip netns exec sender "
         f"ping -f -c {load} 192.168.10.2 > /dev/null 2>&1 || true"
     )
 
-    # Build execution command
+    # Build execution command using isolated log directories (-l)
     suricata_cmd = [
         "sudo", "taskset", "-c", SURICATA_CPUS,
         "ip", "netns", "exec", "receiver",
         SURICATA_BIN,
         "-c", str(CONFIG_DIR / config_file),
         f"--{mode_flag}=veth_rx",
+        "-l", str(log_dir),
         "--pidfile", pid_file,
         "-D"
     ]
 
-    if mode == "af_xdp":
-        suricata_cmd.extend(["--set", "af-xdp.0.force-xdp-mode=skb"])
-
     try:
+        # Wipe old default log files if present
+        run_cmd("sudo rm -f /var/log/suricata/stats.log ./stats.log", check=False)
+
         # Launch Suricata in Daemon mode
         run_cmd(" ".join(suricata_cmd), env=env)
-        time.sleep(2)  # Allow worker threads to initialize
+        time.sleep(2)  # Wait for worker threads initialization
 
-        # Inject traffic with hard timeout to prevent hangs on packet drop
+        # Inject traffic
         try:
             subprocess.run(
                 pktgen_cmd,
@@ -90,7 +92,7 @@ def execute_suricata_iteration(mode, mode_flag, config_file, load, batch, ring, 
             pass
 
     finally:
-        # Terminate Suricata cleanly via SIGTERM to force stats write-out
+        # Stop Suricata cleanly to force stats flush
         if os.path.exists(pid_file):
             try:
                 with open(pid_file, "r") as f:
@@ -100,20 +102,16 @@ def execute_suricata_iteration(mode, mode_flag, config_file, load, batch, ring, 
             except Exception:
                 pass
         
-        # Force fallback kill to ensure clean environment
         run_cmd("sudo pkill -9 suricata", check=False)
 
-        # Save stats output immediately after iteration completes
-        default_log = Path("/var/log/suricata/stats.log")
-        local_log = BASE_DIR / "stats.log"
+        # Copy isolated stats.log to bench_data
+        isolated_stats = log_dir / "stats.log"
+        if isolated_stats.exists():
+            shutil.copy(isolated_stats, dest_log)
 
-        if default_log.exists():
-            shutil.copy(default_log, dest_log)
-        elif local_log.exists():
-            shutil.copy(local_log, dest_log)
-
-        # Clean up temporary PID files and leftover lock files
-        run_cmd(f"sudo rm -f {pid_file} /var/run/suricata.pid /tmp/suricata_test.pid", check=False)
+        # Cleanup isolated temporary logs
+        shutil.rmtree(log_dir, ignore_errors=True)
+        run_cmd(f"sudo rm -f {pid_file}", check=False)
         time.sleep(1)
 
 def benchmark_af_packet():
@@ -163,7 +161,7 @@ def main():
     setup_environment("up")
 
     try:
-        # benchmark_af_packet()  # Kept commented out since AF_PACKET results are already saved
+        benchmark_af_packet() 
         benchmark_af_xdp()
         print("\n[✔] Full benchmark sweep completed successfully!")
         print(f"[✔] Metrics stored in: {DATA_DIR}")
