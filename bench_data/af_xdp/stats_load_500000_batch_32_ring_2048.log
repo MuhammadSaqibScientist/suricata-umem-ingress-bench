@@ -1,546 +1,723 @@
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:20 (uptime: 0d, 00h 00m 02s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-tcp.memuse                                    | Global                    | 622592
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:04 (uptime: 0d, 00h 00m 01s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:21 (uptime: 0d, 00h 00m 03s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-tcp.memuse                                    | Global                    | 622592
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:05 (uptime: 0d, 00h 00m 02s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:22 (uptime: 0d, 00h 00m 04s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 4225901
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 4225901
-tcp.memuse                                    | Global                    | 622592
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:06 (uptime: 0d, 00h 00m 03s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 8450
+capture.afxdp.empty_reads                     | Total                     | 5097649
+decoder.pkts                                  | Total                     | 9136
+decoder.bytes                                 | Total                     | 895328
+decoder.ipv4                                  | Total                     | 9136
+decoder.ethernet                              | Total                     | 9136
+decoder.icmpv4                                | Total                     | 9136
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 8450
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 5097649
+decoder.pkts                                  | W#01-veth_rx              | 9136
+decoder.bytes                                 | W#01-veth_rx              | 895328
+decoder.ipv4                                  | W#01-veth_rx              | 9136
+decoder.ethernet                              | W#01-veth_rx              | 9136
+decoder.icmpv4                                | W#01-veth_rx              | 9136
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:23 (uptime: 0d, 00h 00m 05s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 4225901
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 4225901
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:07 (uptime: 0d, 00h 00m 04s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 8450
+capture.afxdp.empty_reads                     | Total                     | 5097649
+decoder.pkts                                  | Total                     | 9136
+decoder.bytes                                 | Total                     | 895328
+decoder.ipv4                                  | Total                     | 9136
+decoder.ethernet                              | Total                     | 9136
+decoder.icmpv4                                | Total                     | 9136
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 8450
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 5097649
+decoder.pkts                                  | W#01-veth_rx              | 9136
+decoder.bytes                                 | W#01-veth_rx              | 895328
+decoder.ipv4                                  | W#01-veth_rx              | 9136
+decoder.ethernet                              | W#01-veth_rx              | 9136
+decoder.icmpv4                                | W#01-veth_rx              | 9136
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:24 (uptime: 0d, 00h 00m 06s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 4225901
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 4225901
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:08 (uptime: 0d, 00h 00m 05s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 8450
+capture.afxdp.empty_reads                     | Total                     | 5097649
+decoder.pkts                                  | Total                     | 9136
+decoder.bytes                                 | Total                     | 895328
+decoder.ipv4                                  | Total                     | 9136
+decoder.ethernet                              | Total                     | 9136
+decoder.icmpv4                                | Total                     | 9136
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 8450
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 5097649
+decoder.pkts                                  | W#01-veth_rx              | 9136
+decoder.bytes                                 | W#01-veth_rx              | 895328
+decoder.ipv4                                  | W#01-veth_rx              | 9136
+decoder.ethernet                              | W#01-veth_rx              | 9136
+decoder.icmpv4                                | W#01-veth_rx              | 9136
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:25 (uptime: 0d, 00h 00m 07s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 8435182
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 8435182
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:09 (uptime: 0d, 00h 00m 06s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 17610
+capture.afxdp.empty_reads                     | Total                     | 10264879
+decoder.pkts                                  | Total                     | 18289
+decoder.bytes                                 | Total                     | 1792322
+decoder.ipv4                                  | Total                     | 18289
+decoder.ethernet                              | Total                     | 18289
+decoder.icmpv4                                | Total                     | 18289
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 17610
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 10264879
+decoder.pkts                                  | W#01-veth_rx              | 18289
+decoder.bytes                                 | W#01-veth_rx              | 1792322
+decoder.ipv4                                  | W#01-veth_rx              | 18289
+decoder.ethernet                              | W#01-veth_rx              | 18289
+decoder.icmpv4                                | W#01-veth_rx              | 18289
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:26 (uptime: 0d, 00h 00m 08s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 8435182
-flow.mgr.full_hash_pass                                      | Total                     | 1
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 8435182
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:10 (uptime: 0d, 00h 00m 07s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 17610
+capture.afxdp.empty_reads                     | Total                     | 10264879
+decoder.pkts                                  | Total                     | 18289
+decoder.bytes                                 | Total                     | 1792322
+decoder.ipv4                                  | Total                     | 18289
+decoder.ethernet                              | Total                     | 18289
+decoder.icmpv4                                | Total                     | 18289
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 1
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 17610
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 10264879
+decoder.pkts                                  | W#01-veth_rx              | 18289
+decoder.bytes                                 | W#01-veth_rx              | 1792322
+decoder.ipv4                                  | W#01-veth_rx              | 18289
+decoder.ethernet                              | W#01-veth_rx              | 18289
+decoder.icmpv4                                | W#01-veth_rx              | 18289
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.full_hash_pass                       | FM#01                     | 1
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:27 (uptime: 0d, 00h 00m 09s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 8435182
-flow.mgr.full_hash_pass                                      | Total                     | 1
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 8435182
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:11 (uptime: 0d, 00h 00m 08s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 17610
+capture.afxdp.empty_reads                     | Total                     | 10264879
+decoder.pkts                                  | Total                     | 18289
+decoder.bytes                                 | Total                     | 1792322
+decoder.ipv4                                  | Total                     | 18289
+decoder.ethernet                              | Total                     | 18289
+decoder.icmpv4                                | Total                     | 18289
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 1
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 17610
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 10264879
+decoder.pkts                                  | W#01-veth_rx              | 18289
+decoder.bytes                                 | W#01-veth_rx              | 1792322
+decoder.ipv4                                  | W#01-veth_rx              | 18289
+decoder.ethernet                              | W#01-veth_rx              | 18289
+decoder.icmpv4                                | W#01-veth_rx              | 18289
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.full_hash_pass                       | FM#01                     | 1
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:28 (uptime: 0d, 00h 00m 10s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 12646567
-flow.mgr.full_hash_pass                                      | Total                     | 1
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 12646567
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:12 (uptime: 0d, 00h 00m 09s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 26609
+capture.afxdp.empty_reads                     | Total                     | 15398790
+decoder.pkts                                  | Total                     | 27281
+decoder.bytes                                 | Total                     | 2673538
+decoder.ipv4                                  | Total                     | 27281
+decoder.ethernet                              | Total                     | 27281
+decoder.icmpv4                                | Total                     | 27281
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 1
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 26609
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 15398790
+decoder.pkts                                  | W#01-veth_rx              | 27281
+decoder.bytes                                 | W#01-veth_rx              | 2673538
+decoder.ipv4                                  | W#01-veth_rx              | 27281
+decoder.ethernet                              | W#01-veth_rx              | 27281
+decoder.icmpv4                                | W#01-veth_rx              | 27281
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.full_hash_pass                       | FM#01                     | 1
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:29 (uptime: 0d, 00h 00m 11s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 12646567
-flow.mgr.full_hash_pass                                      | Total                     | 2
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 12646567
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:13 (uptime: 0d, 00h 00m 10s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 26609
+capture.afxdp.empty_reads                     | Total                     | 15398790
+decoder.pkts                                  | Total                     | 27281
+decoder.bytes                                 | Total                     | 2673538
+decoder.ipv4                                  | Total                     | 27281
+decoder.ethernet                              | Total                     | 27281
+decoder.icmpv4                                | Total                     | 27281
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 2
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 26609
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 15398790
+decoder.pkts                                  | W#01-veth_rx              | 27281
+decoder.bytes                                 | W#01-veth_rx              | 2673538
+decoder.ipv4                                  | W#01-veth_rx              | 27281
+decoder.ethernet                              | W#01-veth_rx              | 27281
+decoder.icmpv4                                | W#01-veth_rx              | 27281
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.full_hash_pass                       | FM#01                     | 2
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:30 (uptime: 0d, 00h 00m 12s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 12646567
-flow.mgr.full_hash_pass                                      | Total                     | 2
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 12646567
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:14 (uptime: 0d, 00h 00m 11s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 26609
+capture.afxdp.empty_reads                     | Total                     | 15398790
+decoder.pkts                                  | Total                     | 27281
+decoder.bytes                                 | Total                     | 2673538
+decoder.ipv4                                  | Total                     | 27281
+decoder.ethernet                              | Total                     | 27281
+decoder.icmpv4                                | Total                     | 27281
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 2
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 26609
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 15398790
+decoder.pkts                                  | W#01-veth_rx              | 27281
+decoder.bytes                                 | W#01-veth_rx              | 2673538
+decoder.ipv4                                  | W#01-veth_rx              | 27281
+decoder.ethernet                              | W#01-veth_rx              | 27281
+decoder.icmpv4                                | W#01-veth_rx              | 27281
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.full_hash_pass                       | FM#01                     | 2
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:31 (uptime: 0d, 00h 00m 13s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 16856510
-flow.mgr.full_hash_pass                                      | Total                     | 2
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 16856510
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:15 (uptime: 0d, 00h 00m 12s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 35604
+capture.afxdp.empty_reads                     | Total                     | 20407857
+capture.afxdp.failed_reads                    | Total                     | 1
+decoder.pkts                                  | Total                     | 36278
+decoder.bytes                                 | Total                     | 3555244
+decoder.ipv4                                  | Total                     | 36278
+decoder.ethernet                              | Total                     | 36278
+decoder.icmpv4                                | Total                     | 36278
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 2
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 35604
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 20407857
+capture.afxdp.failed_reads                    | W#01-veth_rx              | 1
+decoder.pkts                                  | W#01-veth_rx              | 36278
+decoder.bytes                                 | W#01-veth_rx              | 3555244
+decoder.ipv4                                  | W#01-veth_rx              | 36278
+decoder.ethernet                              | W#01-veth_rx              | 36278
+decoder.icmpv4                                | W#01-veth_rx              | 36278
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.full_hash_pass                       | FM#01                     | 2
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:32 (uptime: 0d, 00h 00m 14s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 16856510
-flow.mgr.full_hash_pass                                      | Total                     | 2
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 16856510
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:16 (uptime: 0d, 00h 00m 13s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 35604
+capture.afxdp.empty_reads                     | Total                     | 20407857
+capture.afxdp.failed_reads                    | Total                     | 1
+decoder.pkts                                  | Total                     | 36278
+decoder.bytes                                 | Total                     | 3555244
+decoder.ipv4                                  | Total                     | 36278
+decoder.ethernet                              | Total                     | 36278
+decoder.icmpv4                                | Total                     | 36278
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 2
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 35604
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 20407857
+capture.afxdp.failed_reads                    | W#01-veth_rx              | 1
+decoder.pkts                                  | W#01-veth_rx              | 36278
+decoder.bytes                                 | W#01-veth_rx              | 3555244
+decoder.ipv4                                  | W#01-veth_rx              | 36278
+decoder.ethernet                              | W#01-veth_rx              | 36278
+decoder.icmpv4                                | W#01-veth_rx              | 36278
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.full_hash_pass                       | FM#01                     | 2
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:33 (uptime: 0d, 00h 00m 15s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 16856510
-flow.mgr.full_hash_pass                                      | Total                     | 2
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 16856510
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:17 (uptime: 0d, 00h 00m 14s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 42190
+capture.afxdp.empty_reads                     | Total                     | 23720152
+capture.afxdp.failed_reads                    | Total                     | 1
+decoder.pkts                                  | Total                     | 42190
+decoder.bytes                                 | Total                     | 4134620
+decoder.ipv4                                  | Total                     | 42190
+decoder.ethernet                              | Total                     | 42190
+decoder.icmpv4                                | Total                     | 42190
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 2
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 42190
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 23720152
+capture.afxdp.failed_reads                    | W#01-veth_rx              | 1
+decoder.pkts                                  | W#01-veth_rx              | 42190
+decoder.bytes                                 | W#01-veth_rx              | 4134620
+decoder.ipv4                                  | W#01-veth_rx              | 42190
+decoder.ethernet                              | W#01-veth_rx              | 42190
+decoder.icmpv4                                | W#01-veth_rx              | 42190
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.full_hash_pass                       | FM#01                     | 2
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:34 (uptime: 0d, 00h 00m 16s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 19644692
-flow.mgr.full_hash_pass                                      | Total                     | 3
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 19644692
+------------------------------------------------------------------------------------
+Date: 11/1/2026 -- 12:06:18 (uptime: 0d, 00h 00m 15s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afxdp_packets                         | Total                     | 42190
+capture.afxdp.empty_reads                     | Total                     | 23720152
+capture.afxdp.failed_reads                    | Total                     | 1
+decoder.pkts                                  | Total                     | 42190
+decoder.bytes                                 | Total                     | 4134620
+decoder.ipv4                                  | Total                     | 42190
+decoder.ethernet                              | Total                     | 42190
+decoder.icmpv4                                | Total                     | 42190
+decoder.avg_pkt_size                          | Total                     | 98
+decoder.max_pkt_size                          | Total                     | 98
+flow.total                                    | Total                     | 1
+flow.active                                   | Total                     | 1
+flow.icmpv4                                   | Total                     | 1
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 3
+flow.mgr.rows_per_sec                         | Total                     | 13762
+flow.spare                                    | Total                     | 9900
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 1
+flow.mgr.flows_notimeout                      | Total                     | 1
+memcap_pressure                               | Total                     | 21
+memcap_pressure_max                           | Total                     | 21
+tcp.memuse                                    | Total                     | 606208
+tcp.reassembly_memuse                         | Total                     | 114688
+flow.memuse                                   | Total                     | 7154304
+capture.afxdp_packets                         | W#01-veth_rx              | 42190
+capture.afxdp.empty_reads                     | W#01-veth_rx              | 23720152
+capture.afxdp.failed_reads                    | W#01-veth_rx              | 1
+decoder.pkts                                  | W#01-veth_rx              | 42190
+decoder.bytes                                 | W#01-veth_rx              | 4134620
+decoder.ipv4                                  | W#01-veth_rx              | 42190
+decoder.ethernet                              | W#01-veth_rx              | 42190
+decoder.icmpv4                                | W#01-veth_rx              | 42190
+decoder.avg_pkt_size                          | W#01-veth_rx              | 98
+decoder.max_pkt_size                          | W#01-veth_rx              | 98
+flow.total                                    | W#01-veth_rx              | 1
+flow.active                                   | W#01-veth_rx              | 1
+flow.icmpv4                                   | W#01-veth_rx              | 1
+flow.wrk.spare_sync_avg                       | W#01-veth_rx              | 100
+flow.wrk.spare_sync                           | W#01-veth_rx              | 1
 flow.mgr.full_hash_pass                       | FM#01                     | 3
 flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
+flow.spare                                    | FM#01                     | 9900
+flow.mgr.rows_maxlen                          | FM#01                     | 1
+flow.mgr.flows_checked                        | FM#01                     | 1
+flow.mgr.flows_notimeout                      | FM#01                     | 1
+memcap_pressure                               | FM#01                     | 21
+memcap_pressure_max                           | FM#01                     | 21
+tcp.memuse                                    | Global                    | 606208
 tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
-flow.memuse                                   | Global                    | 7154304
----------------------------------------------------------------------------------------------------
-Date: 8/30/2026 -- 14:17:34 (uptime: 0d, 00h 00m 16s)
----------------------------------------------------------------------------------------------------
-Counter                                                      | TM Name                   | Value
----------------------------------------------------------------------------------------------------
-capture.afxdp.empty_reads                                    | Total                     | 19644692
-flow.mgr.full_hash_pass                                      | Total                     | 3
-flow.mgr.rows_per_sec                                        | Total                     | 13762
-flow.spare                                                   | Total                     | 10000
-memcap.pressure                                              | Total                     | 21
-memcap.pressure_max                                          | Total                     | 21
-defrag.memuse                                                | Total                     | 16777216
-tcp.memuse                                                   | Total                     | 622592
-tcp.reassembly_memuse                                        | Total                     | 114688
-http.byterange.memuse                                        | Total                     | 168384
-http.byterange.memcap                                        | Total                     | 104857600
-ippair.memuse                                                | Total                     | 398144
-ippair.memcap                                                | Total                     | 16777216
-host.memuse                                                  | Total                     | 382144
-host.memcap                                                  | Total                     | 16777216
-flow.memuse                                                  | Total                     | 7154304
-capture.afxdp.empty_reads                     | W#01-veth_rx              | 19644692
-flow.mgr.full_hash_pass                       | FM#01                     | 3
-flow.mgr.rows_per_sec                         | FM#01                     | 13762
-flow.spare                                    | FM#01                     | 10000
-memcap.pressure                               | FM#01                     | 21
-memcap.pressure_max                           | FM#01                     | 21
-defrag.memuse                                 | FM#01                     | 16777216
-tcp.memuse                                    | Global                    | 622592
-tcp.reassembly_memuse                         | Global                    | 114688
-http.byterange.memuse                         | Global                    | 168384
-http.byterange.memcap                         | Global                    | 104857600
-ippair.memuse                                 | Global                    | 398144
-ippair.memcap                                 | Global                    | 16777216
-host.memuse                                   | Global                    | 382144
-host.memcap                                   | Global                    | 16777216
 flow.memuse                                   | Global                    | 7154304

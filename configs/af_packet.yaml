@@ -26,33 +26,18 @@ outputs:
       filename: fast.log
 
 af-packet:
-  - interface: ${SURICATA_IFACE:-veth_rx}
-    # Threads allocation (Set via SURICATA_THREADS or defaults to 2 worker threads)
-    threads: ${SURICATA_THREADS:-2}
-    
-    # Enable TPACKET_V3 ring buffer
+  - interface: veth_rx
+    threads: 2
     tpacket-v3: yes
-    
-    # Dynamic parameter sweeping variables
-    # Ring Size (number of frames allocated in the ring)
-    ring-size: ${AF_PACKET_RING_SIZE:-2048}
-    
-    # Block Size (must be a power of 2 and aligned with page size)
-    block-size: ${AF_PACKET_BLOCK_SIZE:-32768}
-    
-    # Maximum pending packets in the internal queue before drop
-    max-pending-packets: ${AF_PACKET_MAX_PENDING:-65535}
-
-    # Cluster configuration for load balancing across threads
+    ring-size: 2048
+    block-size: 32768
+    max-pending-packets: 65535
     cluster-id: 99
     cluster-type: cluster_flow
-    
-    # Checksum verification (disabled during benchmarking to isolate raw ingress throughput)
     checksum-checks: no
-
-    # Copy mode disabled (IDS mode)
     copy-mode: ips
     copy-iface: none
+
 
 threading:
   set-cpu-affinity: no

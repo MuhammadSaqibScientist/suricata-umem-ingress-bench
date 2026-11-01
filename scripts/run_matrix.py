@@ -66,6 +66,7 @@ def execute_suricata_iteration(mode, mode_flag, config_file, load, batch, ring, 
         SURICATA_BIN,
         "-c", str(CONFIG_DIR / config_file),
         f"--{mode_flag}=veth_rx",
+        "--runmode=single",  # <-- Added to force worker thread binding in namespaces
         "-l", str(log_dir),
         "--pidfile", pid_file,
         "-D"
@@ -161,7 +162,7 @@ def main():
     setup_environment("up")
 
     try:
-        benchmark_af_packet() 
+        # benchmark_af_packet() 
         benchmark_af_xdp()
         print("\n[✔] Full benchmark sweep completed successfully!")
         print(f"[✔] Metrics stored in: {DATA_DIR}")

@@ -58,6 +58,10 @@ case "$MODE" in
         ip netns exec "$RECEIVER_NS" ip addr add "$IP_RX" dev "$VETH_RX"
         ip netns exec "$RECEIVER_NS" ip link set "$VETH_RX" up
 
+        # Mount bpffs inside receiver namespace
+        ip netns exec "$RECEIVER_NS" mkdir -p /sys/fs/bpf
+        ip netns exec "$RECEIVER_NS" mount -t bpf bpf /sys/fs/bpf || true
+
         # Enable Receive Packet Steering (RPS) across CPU cores inside the receiver namespace
         echo "[+] Enabling RPS on $VETH_RX queues..."
         ip netns exec "$RECEIVER_NS" sh -c "
